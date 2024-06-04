@@ -21,7 +21,7 @@ rcbFLOW_DMTIb.m
 
 Example batch input CSV: 
 
-FAIR_directory_fullpath,RARE_directory_fullpath,first_RARE_slice_filename, (optional: FAIR_mask_file_fullpath, RARE_mask_file_fullpath)
+FAIR_directory_fullpath,RARE_directory_fullpath,first_RARE_slice_filename, (optional: FAIR_mask_file_fullpath, RARE_mask_file_fullpath),
 C:\CBFDir1,C:\RAREDir1,MRIm12.dcm,C:\FAIRmasks\1.dcm,C:\RAREmasks\1.dcm,
 C:\CBFDir2,C:\RAREDir2,MRIm14.dcm,C:\FAIRmasks\2.dcm,C\RAREmasks\2.dcm,
 C:\CBFDir3,C:\RAREDir3,MRIm10.dcm,C:\FAIRmasks\3.dcm,C:\RAREmasks\3.dcm,
