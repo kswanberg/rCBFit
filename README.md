@@ -13,6 +13,12 @@ rcbFLOW_DMTIb.m
 
 * batch_processing (string; '0' or '1'): '0' processes a single dataset; '1' enables batch analysis of a list of inputs defined as in the example CSV below, each additionally defined in the case of batch_processing = 0
 
+* auto_masking for FAIR-EPI (string; '0', '1', or '2'): '0' requires the user to manually select the analysis ROI on a sample FAIR-EPI image, while '1' uses a multi-step segmentation process to do so without manual user input. '2' enables loading of previously traced masks saved as dcms. 
+
+* auto_masking for RARE (string; '0', '1', or '2'): '0' requires the user to manually select the analysis ROI on a sample RARE image, while '1' uses a multi-step segmentation process to do so withoutmanual user input. '2' enables loading of previously traced masks saved as dcms. 
+
+* anti_aliasing (string; '0' or '1'): '0' will not implement anti-aliasing correction on rCBF images, while '1' will. 
+
 Example batch input CSV: 
 
 FAIR_directory_fullpath,RARE_directory_fullpath,first_RARE_slice_filename, (optional: FAIR_mask_file_fullpath, RARE_mask_file_fullpath)
@@ -21,13 +27,7 @@ C:\Users\kswanberg\CBFDir2,C:\Users\kswanberg\RAREDir2,MRIm14.dcm,C:\Users\kswan
 C:\Users\kswanberg\CBFDir3,C:\Users\kswanberg\RAREDir3,MRIm10.dcm,C:\Users\kswanberg\FAIRmasks\3.dcm,C:\Users\kswanberg\RAREmasks\3.dcm,
 C:\Users\kswanberg\CBFDir75,C:\Users\kswanberg\RAREDir75,MRIm12.dcm,C:\Users\kswanberg\FAIRmasks\75.dcm,C:\Users\kswanberg\RAREmasks\75.dcm,
 
-* auto_masking for FAIR-EPI (string; '0', '1', or '2'): '0' requires the user to manually select the analysis ROI on a sample FAIR-EPI image, while '1' uses a multi-step segmentation process to do so without manual user input. '2' enables loading of previously traced masks saved as dcms. 
-
-* auto_masking for RARE (string; '0', '1', or '2'): '0' requires the user to manually select the analysis ROI on a sample RARE image, while '1' uses a multi-step segmentation process to do so withoutmanual user input. '2' enables loading of previously traced masks saved as dcms. 
-
-* anti_aliasing (string; '0' or '1'): '0' will not implement anti-aliasing correction on rCBF images, while '1' will. 
-
-### Outputs (per every dataset analyzed, by file export to single new directory): 
+### Outputs (per every dataset analyzed, by file export to single new directory)
      
 * xxx_rCBF.dcm (DCM): Masked rCBF slice calculated from FAIR-EPI
 * xxx_T1c.dcm (DCM): Masked T1c slice calculated from FAIR-EPI
