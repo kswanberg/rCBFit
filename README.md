@@ -22,10 +22,10 @@ rcbFLOW_DMTIb.m
 Example batch input CSV: 
 
 FAIR_directory_fullpath,RARE_directory_fullpath,first_RARE_slice_filename, (optional: FAIR_mask_file_fullpath, RARE_mask_file_fullpath)
-C:\Users\kswanberg\CBFDir1,C:\Users\kswanberg\RAREDir1,MRIm12.dcm,C:\Users\kswanberg\FAIRmasks\1.dcm,C:\Users\kswanberg\RAREmasks\1.dcm,
-C:\Users\kswanberg\CBFDir2,C:\Users\kswanberg\RAREDir2,MRIm14.dcm,C:\Users\kswanberg\FAIRmasks\2.dcm,C:\Users\kswanberg\RAREmasks\2.dcm,
-C:\Users\kswanberg\CBFDir3,C:\Users\kswanberg\RAREDir3,MRIm10.dcm,C:\Users\kswanberg\FAIRmasks\3.dcm,C:\Users\kswanberg\RAREmasks\3.dcm,
-C:\Users\kswanberg\CBFDir75,C:\Users\kswanberg\RAREDir75,MRIm12.dcm,C:\Users\kswanberg\FAIRmasks\75.dcm,C:\Users\kswanberg\RAREmasks\75.dcm,
+C:\CBFDir1,C:\RAREDir1,MRIm12.dcm,C:\FAIRmasks\1.dcm,C:\RAREmasks\1.dcm,
+C:\CBFDir2,C:\RAREDir2,MRIm14.dcm,C:\FAIRmasks\2.dcm,C\RAREmasks\2.dcm,
+C:\CBFDir3,C:\RAREDir3,MRIm10.dcm,C:\FAIRmasks\3.dcm,C:\RAREmasks\3.dcm,
+C:\CBFDir75,C:\RAREDir75,MRIm12.dcm,C:\FAIRmasks\75.dcm,C:\RAREmasks\75.dcm,
 
 ### Outputs (per every dataset analyzed, by file export to single new directory)
      
