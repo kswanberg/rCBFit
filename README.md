@@ -4,10 +4,10 @@ Passning av perfusionsdata enligt Kober at al. NMR Biomed 21(8):781-92. Calculat
 
 Add to MATLAB path before calling rcbFLOW: 
 
-rcbFLOW.m
-rcbFLOW_invrecexp.m
-rcbFLOW_DMTI2.m
-rcbFLOW_DMTIb.m
+* rcbFLOW.m
+* rcbFLOW_invrecexp.m
+* rcbFLOW_DMTI2.m
+* rcbFLOW_DMTIb.m
 
 ### Inputs (by message prompt)
 
